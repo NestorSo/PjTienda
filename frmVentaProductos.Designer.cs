@@ -41,14 +41,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dgvLista = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.lblCambio = new System.Windows.Forms.Label();
@@ -72,6 +64,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -98,41 +98,47 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(166, 124);
+            this.txtNombre.Mask = "aaaaaaaa";
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 23);
             this.txtNombre.TabIndex = 65;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(166, 156);
+            this.txtPrecio.Location = new System.Drawing.Point(166, 256);
+            this.txtPrecio.Mask = "aaaaaa";
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 23);
             this.txtPrecio.TabIndex = 64;
             // 
             // txtTalla
             // 
-            this.txtTalla.Location = new System.Drawing.Point(166, 185);
+            this.txtTalla.Location = new System.Drawing.Point(166, 225);
+            this.txtTalla.Mask = "aa";
             this.txtTalla.Name = "txtTalla";
             this.txtTalla.Size = new System.Drawing.Size(100, 23);
             this.txtTalla.TabIndex = 63;
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(166, 214);
+            this.txtTipo.Location = new System.Drawing.Point(166, 154);
+            this.txtTipo.Mask = "aaaaaa";
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(100, 23);
             this.txtTipo.TabIndex = 62;
             // 
             // txtGenero
             // 
-            this.txtGenero.Location = new System.Drawing.Point(166, 247);
+            this.txtGenero.Location = new System.Drawing.Point(166, 187);
+            this.txtGenero.Mask = "aaaaaa";
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(100, 23);
             this.txtGenero.TabIndex = 61;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(166, 283);
+            this.txtCantidad.Location = new System.Drawing.Point(166, 285);
+            this.txtCantidad.Mask = "aaa";
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 23);
             this.txtCantidad.TabIndex = 60;
@@ -140,6 +146,7 @@
             // txtProducto
             // 
             this.txtProducto.Location = new System.Drawing.Point(166, 94);
+            this.txtProducto.Mask = "aa";
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(100, 23);
             this.txtProducto.TabIndex = 59;
@@ -147,7 +154,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(76, 217);
+            this.label18.Location = new System.Drawing.Point(76, 157);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(33, 15);
             this.label18.TabIndex = 58;
@@ -156,7 +163,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(76, 251);
+            this.label17.Location = new System.Drawing.Point(76, 191);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(30, 15);
             this.label17.TabIndex = 57;
@@ -165,7 +172,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(76, 286);
+            this.label16.Location = new System.Drawing.Point(72, 293);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(58, 15);
             this.label16.TabIndex = 56;
@@ -191,46 +198,6 @@
             this.dgvLista.RowTemplate.Height = 25;
             this.dgvLista.Size = new System.Drawing.Size(843, 176);
             this.dgvLista.TabIndex = 55;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "IdProducto";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Precio";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Talla";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Tipo";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Para";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Cantidad";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Subtotal";
-            this.Column8.Name = "Column8";
             // 
             // panel6
             // 
@@ -391,6 +358,7 @@
             this.btnCargarLista.TabIndex = 46;
             this.btnCargarLista.Text = "Cargar a la Lista";
             this.btnCargarLista.UseVisualStyleBackColor = true;
+            this.btnCargarLista.Click += new System.EventHandler(this.btnCargarLista_Click);
             // 
             // label6
             // 
@@ -404,7 +372,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(76, 188);
+            this.label5.Location = new System.Drawing.Point(77, 220);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 15);
             this.label5.TabIndex = 44;
@@ -413,7 +381,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(76, 152);
+            this.label4.Location = new System.Drawing.Point(77, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 15);
             this.label4.TabIndex = 43;
@@ -456,6 +424,46 @@
             this.label1.Size = new System.Drawing.Size(266, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ventas De Ropa Y Zapatos ";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "IdProducto";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Tipo";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Para";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Talla";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Precio";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Cantidad";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Subtotal";
+            this.Column8.Name = "Column8";
             // 
             // frmVentaProductos
             // 
@@ -521,14 +529,6 @@
         private Label label17;
         private Label label16;
         private DataGridView dgvLista;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
-        private DataGridViewTextBoxColumn Column8;
         private Panel panel6;
         private Label label15;
         private Label lblCambio;
@@ -552,5 +552,13 @@
         private Label label2;
         private Panel panel2;
         private Label label1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column8;
     }
 }

@@ -56,6 +56,22 @@ namespace PjTienda
                 progressBar1.PerformStep();
             }
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("¿Está seguro de salir?", "Login",
+                                         MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+                this.Close();
+
+        }
+
+        private void cambiarDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 
    
