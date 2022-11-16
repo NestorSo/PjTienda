@@ -22,8 +22,8 @@ namespace PjTienda
             int f = 0;
             int precio = int.Parse(txtPrecio.Text);
             int c = 0;
-            int cantidad = int.Parse(txtCantidad.Text); 
-
+            int cantidad = int.Parse(txtCantidad.Text);
+            var talla = txtTalla.Text;
 
             try
             {
@@ -34,7 +34,7 @@ namespace PjTienda
                     productos[f, 1] = txtNombre.Text;
                     productos[f, 2] = txtTipo.Text;
                     productos[f, 3] = txtGenero.Text;
-                    productos[f, 4] = int.Parse(txtTalla.Text).ToString();
+                    productos[f, 4] = talla;
                     productos[f, 5] = precio.ToString();
                     productos[f, 6] = cantidad.ToString();
 
@@ -99,6 +99,17 @@ namespace PjTienda
             }
         }
 
+        private void txtEfectivo_TextChanged(object sender, EventArgs e)
+        {
+            try {
+                lblCambio.Text = (float.Parse(txtEfectivo.Text) - float.Parse(lblMontoPagar.Text)).ToString();
 
+            }
+            catch(Exception)
+            {
+                throw;
+            }
+
+        }
     }
 }
