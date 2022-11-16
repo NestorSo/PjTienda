@@ -237,7 +237,7 @@
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.lblMontoPagar);
             this.panel4.Controls.Add(this.label10);
-            this.panel4.Location = new System.Drawing.Point(1033, 186);
+            this.panel4.Location = new System.Drawing.Point(1033, 191);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(213, 23);
             this.panel4.TabIndex = 53;
@@ -325,7 +325,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1103, 157);
+            this.label7.Location = new System.Drawing.Point(1103, 162);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 15);
             this.label7.TabIndex = 49;
@@ -334,7 +334,7 @@
             // btnVender
             // 
             this.btnVender.BackColor = System.Drawing.Color.Aqua;
-            this.btnVender.Location = new System.Drawing.Point(1028, 508);
+            this.btnVender.Location = new System.Drawing.Point(1127, 492);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(119, 46);
             this.btnVender.TabIndex = 48;
@@ -462,7 +462,7 @@
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "Subtotal";
+            this.Column8.HeaderText = "SubTotal";
             this.Column8.Name = "Column8";
             // 
             // frmVentaProductos
